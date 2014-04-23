@@ -17,7 +17,8 @@ adb wait-for-device
 adb push lock.bin /sdcard/
 adb push boot.img /sdcard/
 adb push recovery.img /sdcard/
-adb shell<setitfree.sh
+adb push setitfree.sh /sdcard/
+adb shell</sdcard/setitfree.sh
 echo Press Enter to REBOOT TO CWM
 pause
 adb reboot recovery
