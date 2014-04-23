@@ -18,7 +18,7 @@ adb push lock.bin /sdcard/
 adb push boot.img /sdcard/
 adb push recovery.img /sdcard/
 adb push setitfree.sh /sdcard/
-adb shell</sdcard/setitfree.sh
+adb shell cd /sdcard; setitfree.sh
 echo Press Enter to REBOOT TO CWM
 pause
 adb reboot recovery
